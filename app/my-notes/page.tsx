@@ -1,11 +1,13 @@
 "use client"
-import { UserButton } from '@clerk/clerk-react'
 import React from 'react'
+import Sidebar from './Components/Sidebar/Sidebar'
+import ContentArea from './Components/ContentArea/ContentArea'
 
 const page = () => {
   return (
-    <div>
-        <UserButton />
+    <div className='flex'>
+      <Sidebar />
+      <ContentArea/>
     </div>
   )
 }
